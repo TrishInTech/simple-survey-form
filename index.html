@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <meta
+      charset="utf-8"
+      content="width=device-width, initial-scale = 1.0"
+      name="viewport"
+    />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Help us improve this platform</p>
+    <form id="survey-form">
+      <section class="initial-details">
+        <label for="name" id="name-label">Name</label>
+        <input required id="name" type="text" placeholder="Enter your name" />
+        <label for="email" id="email-label">Email</label>
+        <input
+          required
+          type="email"
+          id="email"
+          placeholder="Enter your email"
+        />
+        <label for="number" id="number-label">Age (optional)</label
+        ><input
+          id="number"
+          type="number"
+          min="13"
+          max="120"
+          placeholder="Age"
+        />
+      </section>
+      <section>
+        <label for="dropdown" id="dropdown-label"
+          >Which freeCodeCamp's feature is your favorite?</label
+        >
+        <select id="dropdown">
+          <option value="">Select an option</option>
+          <option value="1">Challenges</option>
+          <option value="2">Projects</option>
+          <option value="2">Community</option>
+        </select>
+      </section>
+      <section>
+        <label id="recommend">Would you recommend our site</label>
+        <label
+          ><input
+            type="radio"
+            name="recommend"
+            value="definitely"
+          />Definitely</label
+        >
+        <label
+          ><input type="radio" name="recommend" value="Not sure" />Not
+          sure</label
+        >
+        <label><input type="radio" name="recommend" value="No" />No</label>
+      </section>
+      <section>
+        <label id="referrer">How did you hear about our site? </label>
+        <label
+          ><input type="radio" value="facebook" name="referrer" />
+          Facebook</label
+        >
+        <label
+          ><input type="radio" value="YouTube" name="referrer" />YouTube</label
+        >
+        <label
+          ><input type="radio" value="friends" name="referrer" />Friends</label
+        >
+        <label
+          ><input
+            type="radio"
+            value="freeCodeCamp"
+            name="referrer"
+          />freeCodeCamp's social media platforms</label
+        >
+        <label><input type="radio" value="other" name="referrer" />Other</label>
+      </section>
+      <section>
+        <label id="improvement"
+          >Check areas you would like to see improved
+        </label>
+        <label
+          ><input type="checkbox" value="front-end" name="improvement" />
+          Front-end projects</label
+        >
+        <label
+          ><input type="checkbox" value="back-end" /> Back-end projects</label
+        >
+        <label
+          ><input type="checkbox" value="visualization" /> Data
+          visualization</label
+        >
+        <label><input type="checkbox" value="forum" /> Forum</label>
+        <label><input type="checkbox" value="videos" /> Videos</label>
+        <label><input type="checkbox" value="challenges" /> Challenges</label>
+      </section>
+      <section class="initial-details">
+        <textarea
+          rows="8"
+          cols="35"
+          id="comments"
+          placeholder="Insert any additional comments"
+        ></textarea>
+      </section>
+
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </body>
+</html>

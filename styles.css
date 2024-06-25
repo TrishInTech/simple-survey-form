@@ -1,0 +1,55 @@
+body{
+    font-family: Tahoma;
+    font-size: 18px;
+    background-color: #7474BC;
+    padding-right:15%;
+    padding-left:15%;
+  }
+  #survey-form{
+    background-color: #2B2B4A;
+    color: white;
+     padding: 30px;
+  }
+  #title, #description{
+    text-align: center;
+    margin: 0;
+  }
+  #description{
+    margin-bottom: 15px;
+    margin-top: 8px
+  }
+  #title{
+    font-family: impact;
+    margin-top: 50px;
+    font-size: 30px;
+  }
+  .initial-details{
+    overflow:hidden;
+  }
+  input, #dropdown, #submit, textarea{
+    width: 100%;
+    padding: 8px;
+  }
+  #name-label, #number-label, #email-label, #dropdown-label, #recommend, #referrer, #improvement{
+    margin-bottom: 8px;
+    margin-top: 25px;
+  }
+  
+  label{
+    display: block;
+  }
+  input[type="radio"], input[type="checkbox"]{
+    width:unset;
+    margin: 7px;
+  }
+  textarea{
+    margin-top:20px;
+    margin-bottom:30px;
+  }
+  #submit{
+  display: block;
+  background-color: #37AF65;
+  border: #37AF65;
+  color: white;
+  font-size: 20px;
+  }
